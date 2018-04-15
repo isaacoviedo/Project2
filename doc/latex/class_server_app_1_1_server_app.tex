@@ -1,0 +1,231 @@
+\hypertarget{class_server_app_1_1_server_app}{}\section{Server\+App.\+Server\+App Class Reference}
+\label{class_server_app_1_1_server_app}\index{Server\+App.\+Server\+App@{Server\+App.\+Server\+App}}
+
+
+Inheritance diagram for Server\+App.\+Server\+App\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_server_app_1_1_server_app__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_server_app_1_1_server_app_ad21d376322b7fed132f39b87d23ccaea}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class_server_app_1_1_server_app_af133cccb1424b84b45c97e9d03471d17}{db\+\_\+host}}, \mbox{\hyperlink{class_server_app_1_1_server_app_a4fbf66ec391567038cfb6dad6d929708}{db\+\_\+name}}, \mbox{\hyperlink{class_server_app_1_1_server_app_a2991ea2a13aedd112c170df7f5a49265}{db\+\_\+user}}, \mbox{\hyperlink{class_server_app_1_1_server_app_ae409845095d3454690497af61592b3e9}{db\+\_\+pass}}, \mbox{\hyperlink{class_server_app_1_1_server_app_a759e0eaa4be95b98b3c5be7d7fa2eb6e}{db\+\_\+table}}, \mbox{\hyperlink{class_server_app_1_1_server_app_a541e00ca3089461e9ee7f02b3a1fdea9}{db\+Connection}}=True)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_server_app_1_1_server_app}{Server\+App}} class. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_server_app_1_1_server_app_a4008e39a65dde07e7e69c2eef0b0f578}{connect\+To\+Db}} (self)
+\begin{DoxyCompactList}\small\item\em Runs the \+\_\+mysql.\+connect() function to connect to the database. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_server_app_1_1_server_app_a665a6527552ef9b8ba12e196b9884655}{set\+Count}} (self, value)
+\begin{DoxyCompactList}\small\item\em Set the count amount using the thread safe mutex. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_server_app_1_1_server_app_a5b6f47399a9434d1a3b86f89a114a44c}{get\+Count}} (self)
+\begin{DoxyCompactList}\small\item\em Get the count suign the thread safe mutex. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_server_app_1_1_server_app_acee9930736fb8b9ff4d1229cfede83e4}{kill\+Server\+And\+Nanny}} (self)
+\begin{DoxyCompactList}\small\item\em Stops the execution loop of both the database nanny and the main server app function. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_server_app_1_1_server_app_a648c098cf7d409cceb017a196b1d0db3}{update\+Database}} (self)
+\begin{DoxyCompactList}\small\item\em Pushes the amount of people that have walked by up to the server. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_server_app_1_1_server_app_a847d2ab7b7c525f897d710859f363ab5}{start}} (self)
+\begin{DoxyCompactList}\small\item\em Start the nanny thread and then begin reading from the sensor via the Data\+Filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_server_app_1_1_server_app_af133cccb1424b84b45c97e9d03471d17}\label{class_server_app_1_1_server_app_af133cccb1424b84b45c97e9d03471d17}} 
+\mbox{\hyperlink{class_server_app_1_1_server_app_af133cccb1424b84b45c97e9d03471d17}{db\+\_\+host}}
+\begin{DoxyCompactList}\small\item\em host for the database \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_app_1_1_server_app_a2991ea2a13aedd112c170df7f5a49265}\label{class_server_app_1_1_server_app_a2991ea2a13aedd112c170df7f5a49265}} 
+\mbox{\hyperlink{class_server_app_1_1_server_app_a2991ea2a13aedd112c170df7f5a49265}{db\+\_\+user}}
+\begin{DoxyCompactList}\small\item\em username for the database \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_app_1_1_server_app_a4fbf66ec391567038cfb6dad6d929708}\label{class_server_app_1_1_server_app_a4fbf66ec391567038cfb6dad6d929708}} 
+\mbox{\hyperlink{class_server_app_1_1_server_app_a4fbf66ec391567038cfb6dad6d929708}{db\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em name of the database \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_app_1_1_server_app_ae409845095d3454690497af61592b3e9}\label{class_server_app_1_1_server_app_ae409845095d3454690497af61592b3e9}} 
+\mbox{\hyperlink{class_server_app_1_1_server_app_ae409845095d3454690497af61592b3e9}{db\+\_\+pass}}
+\begin{DoxyCompactList}\small\item\em password for the database \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_server_app_1_1_server_app_a759e0eaa4be95b98b3c5be7d7fa2eb6e}{db\+\_\+table}}
+\begin{DoxyCompactList}\small\item\em Table to push data to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_app_1_1_server_app_ac135cf1405ae7df3699a2131821af81f}\label{class_server_app_1_1_server_app_ac135cf1405ae7df3699a2131821af81f}} 
+\mbox{\hyperlink{class_server_app_1_1_server_app_ac135cf1405ae7df3699a2131821af81f}{sched}}
+\begin{DoxyCompactList}\small\item\em Schedular for regularly running the update database. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_app_1_1_server_app_a392a723730fcdbefd0a4b96f820c9fec}\label{class_server_app_1_1_server_app_a392a723730fcdbefd0a4b96f820c9fec}} 
+\mbox{\hyperlink{class_server_app_1_1_server_app_a392a723730fcdbefd0a4b96f820c9fec}{failed\+\_\+queries}}
+\begin{DoxyCompactList}\small\item\em Member variable to keep track of the failed queries. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_server_app_1_1_server_app_a541e00ca3089461e9ee7f02b3a1fdea9}{db\+Connection}}
+\begin{DoxyCompactList}\small\item\em Local variable indicating whether to connect to and run the database. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_app_1_1_server_app_a9749427986bfbdb2428bf5861b61f8c2}\label{class_server_app_1_1_server_app_a9749427986bfbdb2428bf5861b61f8c2}} 
+\mbox{\hyperlink{class_server_app_1_1_server_app_a9749427986bfbdb2428bf5861b61f8c2}{count\+\_\+lock}}
+\begin{DoxyCompactList}\small\item\em Counter Mutex to keep the database\+Nanny and sensor\+Update threads in sync. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_app_1_1_server_app_a5a9788c6453de0cb4cfc6a1f82cfa4d1}\label{class_server_app_1_1_server_app_a5a9788c6453de0cb4cfc6a1f82cfa4d1}} 
+\mbox{\hyperlink{class_server_app_1_1_server_app_a5a9788c6453de0cb4cfc6a1f82cfa4d1}{kill\+\_\+server}}
+\begin{DoxyCompactList}\small\item\em Variable used to kill the database\+Nanny daemon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_app_1_1_server_app_a108fcfaa44a437b4a2a8fede99da06ea}\label{class_server_app_1_1_server_app_a108fcfaa44a437b4a2a8fede99da06ea}} 
+\mbox{\hyperlink{class_server_app_1_1_server_app_a108fcfaa44a437b4a2a8fede99da06ea}{counted\+\_\+people}}
+\begin{DoxyCompactList}\small\item\em The count that is kept of the amount of people that have passed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_app_1_1_server_app_a91855cac79a63ea9e2f260d9ae2a6179}\label{class_server_app_1_1_server_app_a91855cac79a63ea9e2f260d9ae2a6179}} 
+\mbox{\hyperlink{class_server_app_1_1_server_app_a91855cac79a63ea9e2f260d9ae2a6179}{data\+Filter}}
+\begin{DoxyCompactList}\small\item\em Datafulter that determines direction and if people are walking side by side. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_server_app_1_1_server_app_aa3d45986c6c5a318fe81ec68cb794444}{run}}
+\begin{DoxyCompactList}\small\item\em Flag to be set to Flase if we want the \mbox{\hyperlink{class_server_app_1_1_server_app}{Server\+App}} to stop running and kill all it\textquotesingle{}s threads. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_server_app_1_1_server_app_a873b13faee0ebe503e91daddf42f013b}\label{class_server_app_1_1_server_app_a873b13faee0ebe503e91daddf42f013b}} 
+\mbox{\hyperlink{class_server_app_1_1_server_app_a873b13faee0ebe503e91daddf42f013b}{conn}}
+\begin{DoxyCompactList}\small\item\em Connection to the My\+S\+QL db specified by the variables in the constructor (see {\bfseries init} for more detail) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_server_app_1_1_server_app_ad21d376322b7fed132f39b87d23ccaea}\label{class_server_app_1_1_server_app_ad21d376322b7fed132f39b87d23ccaea}} 
+\index{Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Server\+App.\+Server\+App.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{db\+\_\+host,  }\item[{}]{db\+\_\+name,  }\item[{}]{db\+\_\+user,  }\item[{}]{db\+\_\+pass,  }\item[{}]{db\+\_\+table,  }\item[{}]{db\+Connection = {\ttfamily True} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_server_app_1_1_server_app}{Server\+App}} class. 
+
+Handles all of the communication between the Data\+Filter and the database specified by the memeber variables above.
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+\_\+host} & host name for the database to be connected to \\
+\hline
+{\em db\+\_\+name} & name of the database to be connected to \\
+\hline
+{\em db\+\_\+user} & username for the database to be connected to \\
+\hline
+{\em db\+\_\+pass} & password of the database to be connected to \\
+\hline
+{\em db\+\_\+table} & table to push the data to \\
+\hline
+{\em db\+Connection} & to connect to the database or not to connect to the database that is the use of this variable \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_server_app_1_1_server_app_a4008e39a65dde07e7e69c2eef0b0f578}\label{class_server_app_1_1_server_app_a4008e39a65dde07e7e69c2eef0b0f578}} 
+\index{Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}!connect\+To\+Db@{connect\+To\+Db}}
+\index{connect\+To\+Db@{connect\+To\+Db}!Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}}
+\subsubsection{\texorpdfstring{connect\+To\+Db()}{connectToDb()}}
+{\footnotesize\ttfamily def Server\+App.\+Server\+App.\+connect\+To\+Db (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Runs the \+\_\+mysql.\+connect() function to connect to the database. 
+
+This will fail quietly when run so make sure to check your connection when running it on an unstable connection. It will connect to the host, user, and database using the password all provided on initialization. Currently \mbox{\hyperlink{class_server_app_1_1_server_app}{Server\+App}} does not support multiple database connections nor is the connection mutable. \mbox{\Hypertarget{class_server_app_1_1_server_app_a5b6f47399a9434d1a3b86f89a114a44c}\label{class_server_app_1_1_server_app_a5b6f47399a9434d1a3b86f89a114a44c}} 
+\index{Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}!get\+Count@{get\+Count}}
+\index{get\+Count@{get\+Count}!Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}}
+\subsubsection{\texorpdfstring{get\+Count()}{getCount()}}
+{\footnotesize\ttfamily def Server\+App.\+Server\+App.\+get\+Count (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Get the count suign the thread safe mutex. 
+
+\begin{DoxyReturn}{Returns}
+Value of self.\+count 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_server_app_1_1_server_app_acee9930736fb8b9ff4d1229cfede83e4}\label{class_server_app_1_1_server_app_acee9930736fb8b9ff4d1229cfede83e4}} 
+\index{Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}!kill\+Server\+And\+Nanny@{kill\+Server\+And\+Nanny}}
+\index{kill\+Server\+And\+Nanny@{kill\+Server\+And\+Nanny}!Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}}
+\subsubsection{\texorpdfstring{kill\+Server\+And\+Nanny()}{killServerAndNanny()}}
+{\footnotesize\ttfamily def Server\+App.\+Server\+App.\+kill\+Server\+And\+Nanny (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Stops the execution loop of both the database nanny and the main server app function. 
+
+Used to terminate the running of this instance of the \mbox{\hyperlink{class_server_app_1_1_server_app}{Server\+App}} \begin{DoxyVerb}   Becuase we are running the nanny as a daemon be sure to check that it is in fact dead. Remember doublt tap.\end{DoxyVerb}
+ \mbox{\Hypertarget{class_server_app_1_1_server_app_a665a6527552ef9b8ba12e196b9884655}\label{class_server_app_1_1_server_app_a665a6527552ef9b8ba12e196b9884655}} 
+\index{Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}!set\+Count@{set\+Count}}
+\index{set\+Count@{set\+Count}!Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}}
+\subsubsection{\texorpdfstring{set\+Count()}{setCount()}}
+{\footnotesize\ttfamily def Server\+App.\+Server\+App.\+set\+Count (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the count amount using the thread safe mutex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value to set count to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_app_1_1_server_app_a847d2ab7b7c525f897d710859f363ab5}\label{class_server_app_1_1_server_app_a847d2ab7b7c525f897d710859f363ab5}} 
+\index{Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}!start@{start}}
+\index{start@{start}!Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily def Server\+App.\+Server\+App.\+start (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Start the nanny thread and then begin reading from the sensor via the Data\+Filter. 
+
+This main loop (the start one not the database\+Nanny) runs at around 5 Hz. If you want to kill this then run kill\+Server\+And\+Nanny. This will destroy everything.
+
+{\bfseries Examples} 
+\begin{DoxyCode}
+\textcolor{comment}{# This is an example piece of code that implements the ServerApp while stil maintaining the ability to work
+       on other things}
+\textcolor{comment}{# Create the App}
+serv = \mbox{\hyperlink{namespace_server_app}{ServerApp}}(db\_host = \textcolor{stringliteral}{"database.cse.tamu.edu"},db\_name = \textcolor{stringliteral}{"meratexas123"},
+     db\_user = \textcolor{stringliteral}{"meratexas123"},db\_pass = \textcolor{stringliteral}{"111111aA"},
+     db\_table=\textcolor{stringliteral}{"People\_Count\_Data\_Web\_Server\_Dev"},dbConnection=\textcolor{keyword}{True})
+\textcolor{comment}{# Create a Nanny to deal with the ServerApp while we do other things}
+serverNanny = threading.Thread(target=serv.start)
+\textcolor{comment}{# Continue on with the rest of the application}
+\textcolor{keywordflow}{while} (1):
+    \textcolor{comment}{# If we have someone enter Q we kill both the sensor communications and the database nanny}
+    \textcolor{keywordflow}{if} ((input(\textcolor{stringliteral}{""}).find(\textcolor{stringliteral}{"Q"}) >= 0):
+        print(\textcolor{stringliteral}{"Killing the server and database nanny"})
+        serv.killServerAndNanny()
+        \textcolor{comment}{# Now we exit out of this application}
+        sys.exit()
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_server_app_1_1_server_app_a648c098cf7d409cceb017a196b1d0db3}\label{class_server_app_1_1_server_app_a648c098cf7d409cceb017a196b1d0db3}} 
+\index{Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}!update\+Database@{update\+Database}}
+\index{update\+Database@{update\+Database}!Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}}
+\subsubsection{\texorpdfstring{update\+Database()}{updateDatabase()}}
+{\footnotesize\ttfamily def Server\+App.\+Server\+App.\+update\+Database (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Pushes the amount of people that have walked by up to the server. 
+
+Before every push we check that there is still a live connection and then execute the query created by self.\+\_\+get\+Query. On a failed S\+QL query or a bad connection an exception will be raised, caughtm and the number of failed queries will be incremented. The count is pushed to the datbase using the current U\+N\+IX Epoch as a timestamp. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_server_app_1_1_server_app_a759e0eaa4be95b98b3c5be7d7fa2eb6e}\label{class_server_app_1_1_server_app_a759e0eaa4be95b98b3c5be7d7fa2eb6e}} 
+\index{Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}!db\+\_\+table@{db\+\_\+table}}
+\index{db\+\_\+table@{db\+\_\+table}!Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}}
+\subsubsection{\texorpdfstring{db\+\_\+table}{db\_table}}
+{\footnotesize\ttfamily Server\+App.\+Server\+App.\+db\+\_\+table}
+
+
+
+Table to push data to. 
+
+This should be inside of the databse db\+\_\+name \mbox{\Hypertarget{class_server_app_1_1_server_app_a541e00ca3089461e9ee7f02b3a1fdea9}\label{class_server_app_1_1_server_app_a541e00ca3089461e9ee7f02b3a1fdea9}} 
+\index{Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}!db\+Connection@{db\+Connection}}
+\index{db\+Connection@{db\+Connection}!Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}}
+\subsubsection{\texorpdfstring{db\+Connection}{dbConnection}}
+{\footnotesize\ttfamily Server\+App.\+Server\+App.\+db\+Connection}
+
+
+
+Local variable indicating whether to connect to and run the database. 
+
+This is usually used during testing. \mbox{\Hypertarget{class_server_app_1_1_server_app_aa3d45986c6c5a318fe81ec68cb794444}\label{class_server_app_1_1_server_app_aa3d45986c6c5a318fe81ec68cb794444}} 
+\index{Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}!run@{run}}
+\index{run@{run}!Server\+App\+::\+Server\+App@{Server\+App\+::\+Server\+App}}
+\subsubsection{\texorpdfstring{run}{run}}
+{\footnotesize\ttfamily Server\+App.\+Server\+App.\+run}
+
+
+
+Flag to be set to Flase if we want the \mbox{\hyperlink{class_server_app_1_1_server_app}{Server\+App}} to stop running and kill all it\textquotesingle{}s threads. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Nicholas/git-\/wkspace/\+C\+S\+C\+E\+\_\+315\+\_\+\+Project\+\_\+\+One/python\+\_\+src/Server\+App.\+py\end{DoxyCompactItemize}

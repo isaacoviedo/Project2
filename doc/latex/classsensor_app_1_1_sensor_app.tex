@@ -1,0 +1,171 @@
+\hypertarget{classsensor_app_1_1_sensor_app}{}\section{sensor\+App.\+Sensor\+App Class Reference}
+\label{classsensor_app_1_1_sensor_app}\index{sensor\+App.\+Sensor\+App@{sensor\+App.\+Sensor\+App}}
+
+
+Implementation talking to the ranging sensor.  
+
+
+
+
+Inheritance diagram for sensor\+App.\+Sensor\+App\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classsensor_app_1_1_sensor_app__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classsensor_app_1_1_sensor_app_aff4d4ec9b68e6bd9953992bca3c3ea3d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsensor_app_1_1_sensor_app_a1c6f7cac80d19d5870ff22738732fdf4}{arduino\+\_\+port}}, \mbox{\hyperlink{classsensor_app_1_1_sensor_app_ae2475f8d81d862dd64aff6f9a6a76662}{baudrate}}, \mbox{\hyperlink{classsensor_app_1_1_sensor_app_a5f53e6fffcb4e1aedf99d6d73d3f4d51}{update\+\_\+rate}}, \mbox{\hyperlink{classsensor_app_1_1_sensor_app_a6d9216a1f62c4f9d6502ac876601d687}{trigger\+\_\+pins}}, \mbox{\hyperlink{classsensor_app_1_1_sensor_app_a77ad47b625b026d193a7b5e614a5703c}{echo\+\_\+pins}})
+\begin{DoxyCompactList}\small\item\em Initializes the \mbox{\hyperlink{classsensor_app_1_1_sensor_app}{Sensor\+App}} with the given arduino\+\_\+port and the baudrate on that port. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classsensor_app_1_1_sensor_app_a26bc47736a7df7fb5c0b946be1963c47}{configure\+\_\+ard}} (self)
+\begin{DoxyCompactList}\small\item\em Configures the arduino with the number of trigger and echo pins as well as the update rate specified in the initialization of the sensor\+App class. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classsensor_app_1_1_sensor_app_a23ea17545530a32aaf5c4b949b20dc9f}{read\+From\+Serial}} (self, msg\+\_\+length)
+\begin{DoxyCompactList}\small\item\em Encapsulates the reading from the serial socket and conversion to A\+S\+C\+II to make this more digestable. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classsensor_app_1_1_sensor_app_aca850979049ee038baa71e599b4a2d12}{send\+To\+Serial}} (self, msg)
+\begin{DoxyCompactList}\small\item\em Helper function to convert the characters to ascii encoding so that the Arduino can understand them. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classsensor_app_1_1_sensor_app_a5c008ad5e7412c3e6edb19fd1853c882}{read\+From\+Sensor}} (self, nbr\+Readings=5)
+\begin{DoxyCompactList}\small\item\em Reads the number of readings specified by nbr\+Readings from the sensor. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classsensor_app_1_1_sensor_app_ac51bf775c9b2e7e176a3535127036e69}{print\+Pretty\+Response}} (self, resp)
+\begin{DoxyCompactList}\small\item\em Helper function for debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsensor_app_1_1_sensor_app_a1c6f7cac80d19d5870ff22738732fdf4}\label{classsensor_app_1_1_sensor_app_a1c6f7cac80d19d5870ff22738732fdf4}} 
+\mbox{\hyperlink{classsensor_app_1_1_sensor_app_a1c6f7cac80d19d5870ff22738732fdf4}{arduino\+\_\+port}}
+\begin{DoxyCompactList}\small\item\em Port for the Arduino to connect to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsensor_app_1_1_sensor_app_ae2475f8d81d862dd64aff6f9a6a76662}\label{classsensor_app_1_1_sensor_app_ae2475f8d81d862dd64aff6f9a6a76662}} 
+\mbox{\hyperlink{classsensor_app_1_1_sensor_app_ae2475f8d81d862dd64aff6f9a6a76662}{baudrate}}
+\begin{DoxyCompactList}\small\item\em Baudrate of the arduino\+\_\+port, should be 250000. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsensor_app_1_1_sensor_app_ae51a9d3921f0adc9031992eea6e707e1}\label{classsensor_app_1_1_sensor_app_ae51a9d3921f0adc9031992eea6e707e1}} 
+\mbox{\hyperlink{classsensor_app_1_1_sensor_app_ae51a9d3921f0adc9031992eea6e707e1}{sock}}
+\begin{DoxyCompactList}\small\item\em Serial Socket created to communicate with the arduino over the arduino\+\_\+port. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsensor_app_1_1_sensor_app_a5f53e6fffcb4e1aedf99d6d73d3f4d51}\label{classsensor_app_1_1_sensor_app_a5f53e6fffcb4e1aedf99d6d73d3f4d51}} 
+\mbox{\hyperlink{classsensor_app_1_1_sensor_app_a5f53e6fffcb4e1aedf99d6d73d3f4d51}{update\+\_\+rate}}
+\begin{DoxyCompactList}\small\item\em Specified update\+\_\+rate for the arduino. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsensor_app_1_1_sensor_app_a6d9216a1f62c4f9d6502ac876601d687}\label{classsensor_app_1_1_sensor_app_a6d9216a1f62c4f9d6502ac876601d687}} 
+\mbox{\hyperlink{classsensor_app_1_1_sensor_app_a6d9216a1f62c4f9d6502ac876601d687}{trigger\+\_\+pins}}
+\begin{DoxyCompactList}\small\item\em Pins for triggering the ultrasonic sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsensor_app_1_1_sensor_app_a77ad47b625b026d193a7b5e614a5703c}\label{classsensor_app_1_1_sensor_app_a77ad47b625b026d193a7b5e614a5703c}} 
+\mbox{\hyperlink{classsensor_app_1_1_sensor_app_a77ad47b625b026d193a7b5e614a5703c}{echo\+\_\+pins}}
+\begin{DoxyCompactList}\small\item\em Pins for the echo signal on the ultrasonic sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation talking to the ranging sensor. 
+
+Encaspulates the configuration and communication with the sensor using custom configuration protocol. This class needs to be used in conjunction with the firmware held inside of the Arduino directory 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsensor_app_1_1_sensor_app_aff4d4ec9b68e6bd9953992bca3c3ea3d}\label{classsensor_app_1_1_sensor_app_aff4d4ec9b68e6bd9953992bca3c3ea3d}} 
+\index{sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def sensor\+App.\+Sensor\+App.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arduino\+\_\+port,  }\item[{}]{baudrate,  }\item[{}]{update\+\_\+rate,  }\item[{}]{trigger\+\_\+pins,  }\item[{}]{echo\+\_\+pins }\end{DoxyParamCaption})}
+
+
+
+Initializes the \mbox{\hyperlink{classsensor_app_1_1_sensor_app}{Sensor\+App}} with the given arduino\+\_\+port and the baudrate on that port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arduino\+\_\+port} & port to communicate to the arduino over \\
+\hline
+{\em baudrate} & baudrate of the arduino\+\_\+port, for our application we set it to 250k\+Hz, but if you change the the baudrate in the firmware you need to change this aswell \\
+\hline
+{\em update\+\_\+rate} & update rate that the arduino will be set to \\
+\hline
+{\em trigger\+\_\+pins} & An array of the trigger pins that is the same length as the echo\+\_\+pins \\
+\hline
+{\em echo\+\_\+pins} & An array of the echo\+\_\+pins that is the same length as the trigger\+\_\+pins \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsensor_app_1_1_sensor_app_a26bc47736a7df7fb5c0b946be1963c47}\label{classsensor_app_1_1_sensor_app_a26bc47736a7df7fb5c0b946be1963c47}} 
+\index{sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}!configure\+\_\+ard@{configure\+\_\+ard}}
+\index{configure\+\_\+ard@{configure\+\_\+ard}!sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}}
+\subsubsection{\texorpdfstring{configure\+\_\+ard()}{configure\_ard()}}
+{\footnotesize\ttfamily def sensor\+App.\+Sensor\+App.\+configure\+\_\+ard (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Configures the arduino with the number of trigger and echo pins as well as the update rate specified in the initialization of the sensor\+App class. 
+
+We create the configuration string, send it, and then wait for the S\+U\+CC key to be returned which indicates that the Arduino has been properly configured. There is no error checking here and it is intentionally made so that the program hangs. If no configuration comes back the sensor should not be run. \mbox{\Hypertarget{classsensor_app_1_1_sensor_app_ac51bf775c9b2e7e176a3535127036e69}\label{classsensor_app_1_1_sensor_app_ac51bf775c9b2e7e176a3535127036e69}} 
+\index{sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}!print\+Pretty\+Response@{print\+Pretty\+Response}}
+\index{print\+Pretty\+Response@{print\+Pretty\+Response}!sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}}
+\subsubsection{\texorpdfstring{print\+Pretty\+Response()}{printPrettyResponse()}}
+{\footnotesize\ttfamily def sensor\+App.\+Sensor\+App.\+print\+Pretty\+Response (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{resp }\end{DoxyParamCaption})}
+
+
+
+Helper function for debugging. 
+
+Prints better looking responses that make it easier to read the data \mbox{\Hypertarget{classsensor_app_1_1_sensor_app_a5c008ad5e7412c3e6edb19fd1853c882}\label{classsensor_app_1_1_sensor_app_a5c008ad5e7412c3e6edb19fd1853c882}} 
+\index{sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}!read\+From\+Sensor@{read\+From\+Sensor}}
+\index{read\+From\+Sensor@{read\+From\+Sensor}!sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}}
+\subsubsection{\texorpdfstring{read\+From\+Sensor()}{readFromSensor()}}
+{\footnotesize\ttfamily def sensor\+App.\+Sensor\+App.\+read\+From\+Sensor (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nbr\+Readings = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+
+
+Reads the number of readings specified by nbr\+Readings from the sensor. 
+
+Returns an array that is of the following format\+:\+: \mbox{[}\mbox{[}Sensor\mbox{]}\mbox{[}Sensor\mbox{]}\mbox{[}Sensor\mbox{]}\mbox{]} Where Sensor is an array of tuples which contain the timestamps at which they where taken and the readings \mbox{[}(TS,RD),(TS,RD),(TS,RD)\mbox{]}. So an exampe of a returned value would be \mbox{[}\mbox{[}(123,456)\mbox{]},\mbox{[}(456,323)\mbox{]},\mbox{[}(765,345)\mbox{]}\mbox{]} Accessign the readings of Sensor one would then be return\+V\+Alue\mbox{[}0\mbox{]}\mbox{[}0\mbox{]}\mbox{[}1\mbox{]} Where the first 0 is the sensor, the second thr reading and the last index should be 0 or 1 where 0 is the timestamp and 1 is the reading. \begin{DoxyVerb}   If you are interested in the format of the communication protocol you need to look at the top of the page or look inside of the documentation for the firmware where you can find the back and forth protocol laid out for you. If the value returned from the sensor is erroneous or there is a bad sync on the socket we will return a fasle value of:: [[(999999999,40000)],[(999999999,40000)]] whcih will be filtered out by our dataFilter. If you need to double check this value just check if the returned reading is over the max of the sensor which is 800.
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbr\+Readings} & number of readings to be returned by the sensor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of array of tuples where the tuples are of type (Timestamp, Reading) and the array indexes are Sensor and reading number in that order or in the case of failure \mbox{[}\mbox{[}(999999999,40000)\mbox{]},\mbox{[}(999999999,40000)\mbox{]}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsensor_app_1_1_sensor_app_a23ea17545530a32aaf5c4b949b20dc9f}\label{classsensor_app_1_1_sensor_app_a23ea17545530a32aaf5c4b949b20dc9f}} 
+\index{sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}!read\+From\+Serial@{read\+From\+Serial}}
+\index{read\+From\+Serial@{read\+From\+Serial}!sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}}
+\subsubsection{\texorpdfstring{read\+From\+Serial()}{readFromSerial()}}
+{\footnotesize\ttfamily def sensor\+App.\+Sensor\+App.\+read\+From\+Serial (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+Encapsulates the reading from the serial socket and conversion to A\+S\+C\+II to make this more digestable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg\+\_\+length} & length of the message to read from the buffer. If the requested message length is longer than the currently available data then only the currently available data is returns\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An ascii encoded string of the data on the bus of length msg\+\_\+length or sock.\+in\+\_\+waiting 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsensor_app_1_1_sensor_app_aca850979049ee038baa71e599b4a2d12}\label{classsensor_app_1_1_sensor_app_aca850979049ee038baa71e599b4a2d12}} 
+\index{sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}!send\+To\+Serial@{send\+To\+Serial}}
+\index{send\+To\+Serial@{send\+To\+Serial}!sensor\+App\+::\+Sensor\+App@{sensor\+App\+::\+Sensor\+App}}
+\subsubsection{\texorpdfstring{send\+To\+Serial()}{sendToSerial()}}
+{\footnotesize\ttfamily def sensor\+App.\+Sensor\+App.\+send\+To\+Serial (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+
+
+Helper function to convert the characters to ascii encoding so that the Arduino can understand them. 
+
+If the msg is of type string then this function will write it to the serial socket and return the number of bytes written otherwise it will return the None type
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & msg to be sent over the serial socket\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None if the message is not of type string or the amount of characters written to the socket 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Nicholas/git-\/wkspace/\+C\+S\+C\+E\+\_\+315\+\_\+\+Project\+\_\+\+One/python\+\_\+src/sensor\+App.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,157 @@
+\hypertarget{class_data_filter_1_1_data_filter}{}\section{Data\+Filter.\+Data\+Filter Class Reference}
+\label{class_data_filter_1_1_data_filter}\index{Data\+Filter.\+Data\+Filter@{Data\+Filter.\+Data\+Filter}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_data_filter_1_1_data_filter_ac410f2a7e9574299ee6aff0aff11d3a9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Instantiates Sensor\+App object and sets constants as specified. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a57a96ca7f581852e2922be99f48578e5}\label{class_data_filter_1_1_data_filter_a57a96ca7f581852e2922be99f48578e5}} 
+def \mbox{\hyperlink{class_data_filter_1_1_data_filter_a57a96ca7f581852e2922be99f48578e5}{read\+Data}} (self)
+\begin{DoxyCompactList}\small\item\em Reads latest distance values from Sensor\+App object and updates existing structures within \mbox{\hyperlink{class_data_filter_1_1_data_filter}{Data\+Filter}} class with the new values. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_data_filter_1_1_data_filter_a8ce1d7743127e462a018d678d5e44927}{send\+Data}} (self)
+\begin{DoxyCompactList}\small\item\em To be called by Server\+App. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_data_filter_1_1_data_filter_ae58c36c4343d52baf699c2ce68fbb784}{get\+Data}} (self)
+\begin{DoxyCompactList}\small\item\em To be called by Server\+App. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_data_filter_1_1_data_filter_a2b121b53a52353af961ce977449e4bfa}{clear\+Data}} (self)
+\begin{DoxyCompactList}\small\item\em To be called by Server\+App. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_data_filter_1_1_data_filter_a3e2775cb10b099daeb8a7bcf9aa5fe9f}{calibrate}} (self)
+\begin{DoxyCompactList}\small\item\em Called by constructor and used to calibrate environment noise to improve the filter\textquotesingle{}s ability to discern legitimate distance values read by the Sensor\+App object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_data_filter_1_1_data_filter_a494edf5de2ab50286063711a120d05ef}{update\+Data}} (self, response)
+\begin{DoxyCompactList}\small\item\em Work horse of the \mbox{\hyperlink{class_data_filter_1_1_data_filter}{Data\+Filter}} class. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_data_filter_1_1_data_filter_afed5beb108e5fc193a7d8de6b183c047}{make\+Judgement\+Call}} (self, item, \mbox{\hyperlink{class_data_filter_1_1_data_filter_a2f9315bfe6ab0a7b74bcb98310b2f8d2}{sensor}})
+\begin{DoxyCompactList}\small\item\em Ultimately determines whether a distance value expired in either expectation buffer should be counted as a person walking in a particular direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a60f284188457f923012772e742b80fea}\label{class_data_filter_1_1_data_filter_a60f284188457f923012772e742b80fea}} 
+\mbox{\hyperlink{class_data_filter_1_1_data_filter_a60f284188457f923012772e742b80fea}{people\+Counted}}
+\begin{DoxyCompactList}\small\item\em Object\textquotesingle{}s local count for number of pedestrians. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_acf552ffa41362c83cb122789fe773329}\label{class_data_filter_1_1_data_filter_acf552ffa41362c83cb122789fe773329}} 
+\mbox{\hyperlink{class_data_filter_1_1_data_filter_acf552ffa41362c83cb122789fe773329}{num\+Readings}}
+\begin{DoxyCompactList}\small\item\em The number of readings we want from the sensor each cycle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a2f9315bfe6ab0a7b74bcb98310b2f8d2}\label{class_data_filter_1_1_data_filter_a2f9315bfe6ab0a7b74bcb98310b2f8d2}} 
+\mbox{\hyperlink{class_data_filter_1_1_data_filter_a2f9315bfe6ab0a7b74bcb98310b2f8d2}{sensor}}
+\begin{DoxyCompactList}\small\item\em Initializing Sensor\+App object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a2d139273025a1cb06007c3a5b43f084e}\label{class_data_filter_1_1_data_filter_a2d139273025a1cb06007c3a5b43f084e}} 
+\mbox{\hyperlink{class_data_filter_1_1_data_filter_a2d139273025a1cb06007c3a5b43f084e}{s1\+Data}}
+\begin{DoxyCompactList}\small\item\em Structure to store latest distance values read by sensor 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a8c4508633e4146d7552e7cc7a8329717}\label{class_data_filter_1_1_data_filter_a8c4508633e4146d7552e7cc7a8329717}} 
+\mbox{\hyperlink{class_data_filter_1_1_data_filter_a8c4508633e4146d7552e7cc7a8329717}{s2\+Data}}
+\begin{DoxyCompactList}\small\item\em Structure to store latest distance values read by sensor 2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a366cd6f9f50cb14b36c4db06520acd1b}\label{class_data_filter_1_1_data_filter_a366cd6f9f50cb14b36c4db06520acd1b}} 
+\mbox{\hyperlink{class_data_filter_1_1_data_filter_a366cd6f9f50cb14b36c4db06520acd1b}{E\+B\+S1}}
+\begin{DoxyCompactList}\small\item\em Expectation buffer for sensor 1; stores distance values, timestamps, and other relevant info. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_ae4f6d96d9cf2726c077d31a0457009c5}\label{class_data_filter_1_1_data_filter_ae4f6d96d9cf2726c077d31a0457009c5}} 
+\mbox{\hyperlink{class_data_filter_1_1_data_filter_ae4f6d96d9cf2726c077d31a0457009c5}{E\+B\+S2}}
+\begin{DoxyCompactList}\small\item\em Expectation buffer for sensor 2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a995c23055bc575f0fa3cf25584ca2f97}\label{class_data_filter_1_1_data_filter_a995c23055bc575f0fa3cf25584ca2f97}} 
+\mbox{\hyperlink{class_data_filter_1_1_data_filter_a995c23055bc575f0fa3cf25584ca2f97}{noise}}
+\begin{DoxyCompactList}\small\item\em Depth of environment to determine upper bound on legitimate distance readings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_aed08d319cdf84ec98cc220bb866695da}\label{class_data_filter_1_1_data_filter_aed08d319cdf84ec98cc220bb866695da}} 
+\mbox{\hyperlink{class_data_filter_1_1_data_filter_aed08d319cdf84ec98cc220bb866695da}{time\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Range of time beyond which we conclude separate people triggered sensor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a54efa3bad5ef62cbd98b4a54303f70a6}\label{class_data_filter_1_1_data_filter_a54efa3bad5ef62cbd98b4a54303f70a6}} 
+\mbox{\hyperlink{class_data_filter_1_1_data_filter_a54efa3bad5ef62cbd98b4a54303f70a6}{distance\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Range of distance beyond which we conclude separate people triggered sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_ac410f2a7e9574299ee6aff0aff11d3a9}\label{class_data_filter_1_1_data_filter_ac410f2a7e9574299ee6aff0aff11d3a9}} 
+\index{Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Data\+Filter.\+Data\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Instantiates Sensor\+App object and sets constants as specified. 
+
+Calibrates environment noise. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a3e2775cb10b099daeb8a7bcf9aa5fe9f}\label{class_data_filter_1_1_data_filter_a3e2775cb10b099daeb8a7bcf9aa5fe9f}} 
+\index{Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}!calibrate@{calibrate}}
+\index{calibrate@{calibrate}!Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}}
+\subsubsection{\texorpdfstring{calibrate()}{calibrate()}}
+{\footnotesize\ttfamily def Data\+Filter.\+Data\+Filter.\+calibrate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Called by constructor and used to calibrate environment noise to improve the filter\textquotesingle{}s ability to discern legitimate distance values read by the Sensor\+App object. 
+
+\begin{DoxyReturn}{Returns}
+Calibrated background noise with which distance readings from both sensors are compared 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a2b121b53a52353af961ce977449e4bfa}\label{class_data_filter_1_1_data_filter_a2b121b53a52353af961ce977449e4bfa}} 
+\index{Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}!clear\+Data@{clear\+Data}}
+\index{clear\+Data@{clear\+Data}!Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}}
+\subsubsection{\texorpdfstring{clear\+Data()}{clearData()}}
+{\footnotesize\ttfamily def Data\+Filter.\+Data\+Filter.\+clear\+Data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+To be called by Server\+App. 
+
+Resets existing number of people counted to 0. \mbox{\Hypertarget{class_data_filter_1_1_data_filter_ae58c36c4343d52baf699c2ce68fbb784}\label{class_data_filter_1_1_data_filter_ae58c36c4343d52baf699c2ce68fbb784}} 
+\index{Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}}
+{\footnotesize\ttfamily def Data\+Filter.\+Data\+Filter.\+get\+Data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+To be called by Server\+App. 
+
+Returns existing number of people counted.
+
+\begin{DoxyReturn}{Returns}
+Existing local count of \mbox{\hyperlink{class_data_filter_1_1_data_filter}{Data\+Filter}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_afed5beb108e5fc193a7d8de6b183c047}\label{class_data_filter_1_1_data_filter_afed5beb108e5fc193a7d8de6b183c047}} 
+\index{Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}!make\+Judgement\+Call@{make\+Judgement\+Call}}
+\index{make\+Judgement\+Call@{make\+Judgement\+Call}!Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}}
+\subsubsection{\texorpdfstring{make\+Judgement\+Call()}{makeJudgementCall()}}
+{\footnotesize\ttfamily def Data\+Filter.\+Data\+Filter.\+make\+Judgement\+Call (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item,  }\item[{}]{sensor }\end{DoxyParamCaption})}
+
+
+
+Ultimately determines whether a distance value expired in either expectation buffer should be counted as a person walking in a particular direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & an element of the expectation buffer \\
+\hline
+{\em sensor} & is the number of the sensor (in this case we only support 2 sensors) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a8ce1d7743127e462a018d678d5e44927}\label{class_data_filter_1_1_data_filter_a8ce1d7743127e462a018d678d5e44927}} 
+\index{Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}}
+\subsubsection{\texorpdfstring{send\+Data()}{sendData()}}
+{\footnotesize\ttfamily def Data\+Filter.\+Data\+Filter.\+send\+Data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+To be called by Server\+App. 
+
+Returns existing number of people counted and resets value to 0. \begin{DoxyReturn}{Returns}
+Number of peoplecounted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_filter_1_1_data_filter_a494edf5de2ab50286063711a120d05ef}\label{class_data_filter_1_1_data_filter_a494edf5de2ab50286063711a120d05ef}} 
+\index{Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}!update\+Data@{update\+Data}}
+\index{update\+Data@{update\+Data}!Data\+Filter\+::\+Data\+Filter@{Data\+Filter\+::\+Data\+Filter}}
+\subsubsection{\texorpdfstring{update\+Data()}{updateData()}}
+{\footnotesize\ttfamily def Data\+Filter.\+Data\+Filter.\+update\+Data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{response }\end{DoxyParamCaption})}
+
+
+
+Work horse of the \mbox{\hyperlink{class_data_filter_1_1_data_filter}{Data\+Filter}} class. 
+
+Updates existing class structures with new distance values, discerns whether legitimate data has been measured, and makes judgement calls on expired distance values in either expectation buffer.
+
+\begin{DoxyVerb}        A multidimensional array of tuples [ [ (timestamp, distance), ... , (timestamp, distance) ],[ (timestamp, distance), ... , (timestamp, distance) ] ], where each internal array corresponds to a sensor\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Nicholas/git-\/wkspace/\+C\+S\+C\+E\+\_\+315\+\_\+\+Project\+\_\+\+One/python\+\_\+src/Data\+Filter.\+py\end{DoxyCompactItemize}

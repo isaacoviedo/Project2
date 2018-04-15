@@ -1,0 +1,18 @@
+\hypertarget{namespace_data_filter}{}\section{Data\+Filter Namespace Reference}
+\label{namespace_data_filter}\index{Data\+Filter@{Data\+Filter}}
+
+
+The rationale behind the implementation is that if an individual walks through a sensor, we expect to read a similar distance value in the other sensor within a relatively small timeframe.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_data_filter_1_1_data_filter}{Data\+Filter}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_data_filter_1_1_data_filter}{Data\+Filter}} instantiates Sensor\+App and processes distance values to determine the number of people walking in one direction when traffic is potentially bidirectional. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The rationale behind the implementation is that if an individual walks through a sensor, we expect to read a similar distance value in the other sensor within a relatively small timeframe. 
+
+We use \textquotesingle{}expectation buffers\textquotesingle{} to keep track of our expectations. If we do not read a distance value we expect within a given timeframe, then we know something is awry. We do not have all the information, so we need to make judgement calls based on what we do know. We keep track of various occurrences while a value exists in either expectation buffer to better help us make reasonable judgements to discern the direction and validity of measured data. 
