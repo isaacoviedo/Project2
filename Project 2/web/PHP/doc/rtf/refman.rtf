@@ -1,0 +1,877 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 9;}
+{\s50\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext51 List Continue 0;}
+{\s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext52 List Continue 1;}
+{\s52\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext53 List Continue 2;}
+{\s53\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext54 List Continue 3;}
+{\s54\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext55 List Continue 4;}
+{\s55\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext56 List Continue 5;}
+{\s56\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext57 List Continue 6;}
+{\s57\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext58 List Continue 7;}
+{\s58\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 8;}
+{\s59\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 9;}
+{\s60\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext61 DescContinue 0;}
+{\s61\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext62 DescContinue 1;}
+{\s62\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext63 DescContinue 2;}
+{\s63\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext64 DescContinue 3;}
+{\s64\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext65 DescContinue 4;}
+{\s65\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext66 DescContinue 5;}
+{\s66\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext67 DescContinue 6;}
+{\s67\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext68 DescContinue 7;}
+{\s68\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 8;}
+{\s69\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 9;}
+{\s70\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext81 LatexTOC 0;}
+{\s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext82 LatexTOC 1;}
+{\s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext83 LatexTOC 2;}
+{\s73\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext84 LatexTOC 3;}
+{\s74\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext85 LatexTOC 4;}
+{\s75\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext86 LatexTOC 5;}
+{\s76\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext87 LatexTOC 6;}
+{\s77\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext88 LatexTOC 7;}
+{\s78\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 8;}
+{\s79\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 9;}
+{\s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext81 \sautoupd List Bullet 0;}
+{\s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid \sbasedon0 \snext82 \sautoupd List Bullet 1;}
+{\s82\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls3\adjustright \fs20\cgrid \sbasedon0 \snext83 \sautoupd List Bullet 2;}
+{\s83\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls4\adjustright \fs20\cgrid \sbasedon0 \snext84 \sautoupd List Bullet 3;}
+{\s84\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls5\adjustright \fs20\cgrid \sbasedon0 \snext85 \sautoupd List Bullet 4;}
+{\s85\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls6\adjustright \fs20\cgrid \sbasedon0 \snext86 \sautoupd List Bullet 5;}
+{\s86\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls7\adjustright \fs20\cgrid \sbasedon0 \snext87 \sautoupd List Bullet 6;}
+{\s87\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls8\adjustright \fs20\cgrid \sbasedon0 \snext88 \sautoupd List Bullet 7;}
+{\s88\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls9\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 8;}
+{\s89\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls10\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 9;}
+{\s90\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext91 \sautoupd List Enum 0;}
+{\s91\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext92 \sautoupd List Enum 1;}
+{\s92\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext93 \sautoupd List Enum 2;}
+{\s93\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext94 \sautoupd List Enum 3;}
+{\s94\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext95 \sautoupd List Enum 4;}
+{\s95\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s96\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s97\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext98 \sautoupd List Enum 7;}
+{\s98\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 8;}
+{\s99\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 9;}
+}
+{\info 
+{\title {\comment CSCE 315 Project: PHP Portion  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.0.0 \par
+}}CSCE 315 Project: PHP Portion}
+{\comment Generated byDoxgyen. }
+{\creatim \yr2018\mo3\dy31\hr21\min10\sec0}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt CSCE 315 Project: PHP Portion}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 1.0.0\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Sat Mar 31 2018 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Hierarchical Index\par \pard\plain 
+{\tc \v Hierarchical Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class Hierarchy\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This inheritance list is sorted roughly, but not completely, alphabetically:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+Connection\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+DatabaseManager\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+PHPUnit_Framework_TestCase
+{
+\par
+\pard\plain \s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+ValidationTests\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+TestCase
+{
+\par
+\pard\plain \s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+GetTimeStampAndCountFromDatabaseTest\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+UpdateDatabaseTest\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Index\par \pard\plain 
+{\tc \v Data Structure Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Data Structures\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the data structures with brief descriptions:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Connection} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A connection to the database. An object of this class can open/close a connection to the database, get the status of the connection, and perform a query })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b DatabaseManager} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Manages a connection to the database. This class provides functions to manage database connection })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b GetTimeStampAndCountFromDatabaseTest} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tests Getting values from the database. The data is returned by the database in the form of an array with two columns })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b UpdateDatabaseTest} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tests member methods of {\b DatabaseManager} class })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ValidationTests} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Provides validation code for user inputs. This class provides member functions to validate integer and date inputs })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Documentation{\tc \v Data Structure Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Connection Class Reference\par \pard\plain 
+{\tc\tcl2 \v Connection}
+{\xe \v Connection}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A connection to the database. An object of this class can open/close a connection to the database, get the status of the connection, and perform a query. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __construct} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initializes a {\b Connection} object. Opens a connection to the database and sets values for member variables. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b OpenConnection} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Establishes a connection to the databases. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GetConnection} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns a connection to the database. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b CloseConnection} (){\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Closes the connection to the database. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b executeQuery} ($sqlQuery)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Executes an sql query string. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b $conn}{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Represents the connection to the database. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b $db}{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Represents the database. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b $databaseName}{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Name of the database. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b $username}{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+User name to login to the database. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b $password}{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Password to login to the database. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A connection to the database. An object of this class can open/close a connection to the database, get the status of the connection, and perform a query. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v __construct\:Connection}
+{\xe \v Connection\:__construct}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+__construct ()}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initializes a {\b Connection} object. Opens a connection to the database and sets values for member variables. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Connection} constructor. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v executeQuery\:Connection}
+{\xe \v Connection\:executeQuery}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+executeQuery (  {\i $sqlQuery})}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Executes an sql query string. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i $sqlQuery} \cell }{string with an sql syntax query. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid array \par
+}}}
+{\xe \v GetConnection\:Connection}
+{\xe \v Connection\:GetConnection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+GetConnection ()}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns a connection to the database. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid PDO the connection to the database \par
+}}}
+{\xe \v OpenConnection\:Connection}
+{\xe \v Connection\:OpenConnection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+OpenConnection ()}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Establishes a connection to the databases. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid PDO PHP Data Object to allow interaction with the database. \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+C:/Users/Nicholas/git-wkspace/CSCE_315_Project_One/WebTrafficCounter/PHP/Database Connection/Connection.php\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+DatabaseManager Class Reference\par \pard\plain 
+{\tc\tcl2 \v DatabaseManager}
+{\xe \v DatabaseManager}
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Manages a connection to the database. This class provides functions to manage database connection. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __construct} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initializes an object od {\b DatabaseManager} Class. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Connect} (){\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Establishes a connection to the database. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b GetConnectionStatus} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Return the database connection's status. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Disconnect} (){\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Disconnects the database. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b PerformQuery} ($sqlQuery)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Executes a query if database is connected. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b $databaseConnection}{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+A connection to the database that is managed by this class. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b $connectedToDatabase} = false{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Status of the connection to the database. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Manages a connection to the database. This class provides functions to manage database connection. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v __construct\:DatabaseManager}
+{\xe \v DatabaseManager\:__construct}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+__construct ()}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initializes an object od {\b DatabaseManager} Class. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b DatabaseManager} constructor. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v GetConnectionStatus\:DatabaseManager}
+{\xe \v DatabaseManager\:GetConnectionStatus}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+GetConnectionStatus ()}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Return the database connection's status. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid bool status of the connection to the database. \par
+}}}
+{\xe \v PerformQuery\:DatabaseManager}
+{\xe \v DatabaseManager\:PerformQuery}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+PerformQuery (  {\i $sqlQuery})}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Executes a query if database is connected. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i $sqlQuery} \cell }{string \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid $result array of entries from database. \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+C:/Users/Nicholas/git-wkspace/CSCE_315_Project_One/WebTrafficCounter/PHP/Database Connection/DatabaseManager.php\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+GetTimeStampAndCountFromDatabaseTest Class Reference\par \pard\plain 
+{\tc\tcl2 \v GetTimeStampAndCountFromDatabaseTest}
+{\xe \v GetTimeStampAndCountFromDatabaseTest}
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tests Getting values from the database. The data is returned by the database in the form of an array with two columns. }}\par
+Inheritance diagram for GetTimeStampAndCountFromDatabaseTest:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_get_time_stamp_and_count_from_database_test__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for GetTimeStampAndCountFromDatabaseTest:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_get_time_stamp_and_count_from_database_test__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __construct} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initializes variables neede for further tests. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b testValuesReceived} (){\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Asserts that the number of time stamps and count values are the same. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b $dbManager}{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Test connection to test getting values from database. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tests Getting values from the database. The data is returned by the database in the form of an array with two columns. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v __construct\:GetTimeStampAndCountFromDatabaseTest}
+{\xe \v GetTimeStampAndCountFromDatabaseTest\:__construct}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+__construct ()}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initializes variables neede for further tests. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b GetTimeStampAndCountFromDatabaseTest} constructor. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+C:/Users/Nicholas/git-wkspace/CSCE_315_Project_One/WebTrafficCounter/PHP/PHPTests/GetTimeStampAndCountFromDatabaseTest.php\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+UpdateDatabaseTest Class Reference\par \pard\plain 
+{\tc\tcl2 \v UpdateDatabaseTest}
+{\xe \v UpdateDatabaseTest}
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tests member methods of {\b DatabaseManager} class. }}\par
+Inheritance diagram for UpdateDatabaseTest:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_update_database_test__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for UpdateDatabaseTest:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_update_database_test__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __construct} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initializes values for tests on database interaction. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b testOpenConnection} (){\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tests if a connection can be opened properly. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b testCorrectValuesAddedToDatabase} (){\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tests if the correct values are added to the database. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b testCloseConnection} (){\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tests that database connection is closed properly.  testOpenConnection. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b $dbManager}{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Test connection to test functions of {\b DatabaseManager} class. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tests member methods of {\b DatabaseManager} class. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v __construct\:UpdateDatabaseTest}
+{\xe \v UpdateDatabaseTest\:__construct}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+__construct ()}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initializes values for tests on database interaction. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b UpdateDatabaseTest} constructor. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+C:/Users/Nicholas/git-wkspace/CSCE_315_Project_One/WebTrafficCounter/PHP/Database Connection/UpdateDatabaseTest.php\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ValidationTests Class Reference\par \pard\plain 
+{\tc\tcl2 \v ValidationTests}
+{\xe \v ValidationTests}
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Provides validation code for user inputs. This class provides member functions to validate integer and date inputs. }}\par
+Inheritance diagram for ValidationTests:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_validation_tests__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for ValidationTests:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_validation_tests__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b DateValidation} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns the input date if its valid and false otherwise. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b IntegerValidation} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns null string if integer input is valid and an error otherwise. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Provides validation code for user inputs. This class provides member functions to validate integer and date inputs. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v DateValidation\:ValidationTests}
+{\xe \v ValidationTests\:DateValidation}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+DateValidation ()}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns the input date if its valid and false otherwise. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid bool|string \par
+}}}
+{\xe \v IntegerValidation\:ValidationTests}
+{\xe \v ValidationTests\:IntegerValidation}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+IntegerValidation ()}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns null string if integer input is valid and an error otherwise. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid string \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+C:/Users/Nicholas/git-wkspace/CSCE_315_Project_One/WebTrafficCounter/PHP/PHPTests/ValidationTests.php\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

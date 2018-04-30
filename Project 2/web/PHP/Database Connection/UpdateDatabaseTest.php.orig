@@ -1,0 +1,81 @@
+<?php
+
+include("DatabaseManager.php");
+
+/**
+ * @class UpdateDatabaseTest
+ *
+ * @brief Tests member methods of DatabaseManager class.
+ */
+class UpdateDatabaseTest extends \PHPUnit\Framework\TestCase
+{
+    var $dbManager; //!< Test connection to test functions of DatabaseManager class.
+
+    /**
+     * UpdateDatabaseTest constructor.
+     * @brief Initializes values for tests on database interaction.
+     */
+    public function __construct()
+    {
+        // Initialize a database manager object to facilitate subsequent tests
+        $this->dbManager = new DatabaseManager();
+    }
+
+    /**
+     * @brief Tests if a connection can be opened properly.
+     */
+    public function testOpenConnection() {
+        // first make sure that connection is initially closed
+        $this->assertSame($this->dbManager->GetConnectionStatus(), false); // initially disconnected
+
+        //connect to the database.
+        $this->dbManager->Connect();
+
+        // finally assert that database is connected
+        $this->assertSame($this->dbManager->GetConnectionStatus(), true); // connected to database
+    }
+
+
+    /**
+     * @brief Tests if the correct values are added to the database.
+     */
+    public function testCorrectValuesAddedToDatabase() {
+        //connect to database
+        $this->dbManager->Connect();
+
+<<<<<<< HEAD
+        $sql_query_insert = "INSERT INTO People_Count_Data_Web_Server_Dev (Time_Stamp, Count) VALUES ('201812061205', '1574893')";
+
+        $updateResult = $this->dbManager->PerformQuery($sql_query_insert); //$result will be empty in this case since nothing is returned form database
+
+=======
+        //make a query to insert a value
+>>>>>>> 4be8097a651588f64226e6a92ab5529c6a60e82b
+        $sql_query_select = "SELECT * FROM People_Count_Data_Web_Server_Dev WHERE Time_Stamp = '201812061205'";
+
+        $verifyResult = $this->dbManager->PerformQuery($sql_query_select);
+
+        //assert that correct value was added
+        $this->assertSame($verifyResult['Count'], '1574893'); //same data was updated
+        $this->dbManager->Connect();
+    }
+
+    /**
+     * @brief Tests that database connection is closed properly.
+     * @dataProvider testOpenConnection
+     */
+    public function testCloseConnection() {
+        // connect to the database
+        $this->dbManager->Connect();
+        $this->assertSame($this->dbManager->GetConnectionStatus(), true); // initially connected
+
+        //disconnect
+        $this->dbManager->Disconnect();
+
+        //assert that connection does not exist
+        $this->assertSame($this->dbManager->GetConnectionStatus(), false); // disconnected after calling Disconnect
+
+    }
+}
+
+?>

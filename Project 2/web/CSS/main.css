@@ -1,0 +1,22 @@
+.ChartOptionsArea, .numberOfStudents, .avgNumOfStudents, .statisticalFunctions  {
+    display: block;
+    flex-flow: column;
+    border: 1px solid;
+    float:right;
+    bottom: 0;
+    height: 100%;
+}
+
+.ChartArea{
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 auto;
+    height: 80%;
+    border: 1px solid gray;
+    padding-right: 3%;
+    float: left;
+}
+
+#UserChart {
+    border: 1px gray;
+}
